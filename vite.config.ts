@@ -3,12 +3,11 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // PERUBAHAN ADA DI SINI:
-  // Jika mode development (localhost), pakai "/".
-  // Jika mode production (deploy), pakai "/Cahaya_Laundry/".
-  base: mode === "development" ? "/" : "/Cahaya_Laundry/", 
+  // LOGIKA PINTAR:
+  // Kalau lagi build (production), pakai nama repo.
+  // Kalau lagi dev (localhost), pakai root biasa.
+  base: mode === "production" ? "/Cahaya_Laundry/" : "/",
   
   server: {
     host: "::",
