@@ -1,9 +1,21 @@
 import { motion } from "framer-motion";
 
+const waMessage = `Halo Cahaya Laundry PP 👋
+
+Saya ingin memesan layanan laundry:
+
+*Nama:* 
+*Tipe Pesanan:* (Cuci Setrika/Setrika/Cuci Kering)
+*Estimasi Berat:* ... kg
+*Layanan:* (Antar Jemput/Datang ke Outlet)
+*Alamat:* 
+
+Terima kasih 🙏`;
+
 const FloatingWhatsApp = () => {
   return (
     <motion.a
-      href="https://wa.me/6281399108632?text=Halo%20Cahaya%20Laundry,%20saya%20ingin%20pesan%20layanan%20laundry"
+      href={`https://wa.me/6281399108632?text=${encodeURIComponent(waMessage)}`}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}

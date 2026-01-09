@@ -108,7 +108,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <motion.a
-                href="https://wa.me/6281399108632?text=Halo%20Cahaya%20Laundry,%20saya%20ingin%20pesan%20layanan%20laundry"
+                href="https://wa.me/6281399108632?text=Halo%20Cahaya%20Laundry%20PP%20%F0%9F%91%8B%0A%0ASaya%20ingin%20memesan%20layanan%20laundry%3A%0A%0A*Nama%3A*%20%0A*Tipe%20Pesanan%3A*%20(Cuci%20Setrika%2FSetrika%2FCuci%20Kering)%0A*Estimasi%20Berat%3A*%20...%20kg%0A*Layanan%3A*%20(Antar%20Jemput%2FDatang%20ke%20Outlet)%0A*Alamat%3A*%20%0A%0ATerima%20kasih%20%F0%9F%99%8F"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
