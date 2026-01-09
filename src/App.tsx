@@ -13,14 +13,17 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* v-- TAMBAHKAN basename DI SINI --v */}
-      <BrowserRouter basename="/Cahaya_Laundry">
+      
+      {/* PERBAIKAN: Gunakan import.meta.env.BASE_URL agar otomatis menyesuaikan
+          antara Localhost ("/") dan GitHub Pages ("/Cahaya_Laundry/") */}
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+
     </TooltipProvider>
   </QueryClientProvider>
 );
