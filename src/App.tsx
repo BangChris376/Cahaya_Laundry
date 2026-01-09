@@ -14,8 +14,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       
-      {/* PERBAIKAN: Gunakan import.meta.env.BASE_URL agar otomatis menyesuaikan
-          antara Localhost ("/") dan GitHub Pages ("/Cahaya_Laundry/") */}
+      {/* BAGIAN INI YANG HARUS DIGANTI: */}
+      {/* Gunakan import.meta.env.BASE_URL supaya otomatis */}
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
