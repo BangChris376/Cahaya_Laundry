@@ -133,7 +133,7 @@ const LocationSection = () => {
                 </div>
 
                 <motion.a
-                  href="https://wa.me/6281399108632?text=Halo%20Cahaya%20Laundry,%20apakah%20alamat%20saya%20masuk%20area%20layanan?"
+                  href="https://wa.me/6281399108632?text=Halo%20Cahaya%20Laundry%20PP%20%F0%9F%91%8B%0A%0ASaya%20ingin%20mengecek%20apakah%20alamat%20saya%20masuk%20area%20layanan%20antar%20jemput%3A%0A%0A*Alamat%3A*%20%0A%0ATerima%20kasih%20%F0%9F%99%8F"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
