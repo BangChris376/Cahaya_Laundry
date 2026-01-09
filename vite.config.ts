@@ -5,8 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // v-- PENTING: Tambahkan baris ini agar aset terbaca di GitHub Pages
-  base: "/Cahaya_Laundry/", 
+  // PERUBAHAN ADA DI SINI:
+  // Jika mode development (localhost), pakai "/".
+  // Jika mode production (deploy), pakai "/Cahaya_Laundry/".
+  base: mode === "development" ? "/" : "/Cahaya_Laundry/", 
   
   server: {
     host: "::",
