@@ -13,7 +13,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* v-- TAMBAHKAN basename DI SINI --v */}
+      <BrowserRouter basename="/Cahaya_Laundry">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
