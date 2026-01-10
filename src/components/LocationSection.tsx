@@ -6,7 +6,7 @@ const LocationSection = () => {
     {
       icon: MapPin,
       title: "Alamat",
-      content: "Jl. Bukit Limau Blok PI/4-5 RT 7 RW XI, Permata Puri Ngaliyan",
+      content: "Jl. Bukit Limau Blok FI/4-5 RT 7 RW XI, Permata Puri Ngaliyan",
     },
     {
       icon: Clock,
